@@ -12,14 +12,14 @@ import {
 } from '@angular/core';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 import {AngularEditorConfig, angularEditorConfig} from './config';
-import {AngularEditorToolbarComponent} from './angular-editor-toolbar.component';
-import {AngularEditorService} from './angular-editor.service';
+import {AngularEditorToolbarComponent} from './editor-toolbar.component';
+import {AngularEditorService} from './editor.service';
 import {DOCUMENT} from '@angular/common';
 
 @Component({
-  selector: 'angular-editor',
-  templateUrl: './angular-editor.component.html',
-  styleUrls: ['./angular-editor.component.scss'],
+  selector: 'editor',
+  templateUrl: './editor.component.html',
+  styleUrls: ['./editor.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -124,7 +124,7 @@ export class AngularEditorComponent implements OnInit, ControlValueAccessor, Aft
       this.onTouched();
     }
 
-    if (event.relatedTarget != null && (event.relatedTarget as HTMLElement).parentElement.className !== 'angular-editor-toolbar-set') {
+    if (event.relatedTarget != null && (event.relatedTarget as HTMLElement).parentElement.className !== 'editor-toolbar-set') {
       this.blur.emit('blur');
     }
   }

@@ -1,13 +1,13 @@
 import {Component, ElementRef, EventEmitter, Inject, Output, Renderer2, ViewChild} from '@angular/core';
-import {AngularEditorService} from './angular-editor.service';
+import {AngularEditorService} from './editor.service';
 import {HttpResponse} from '@angular/common/http';
 import {DOCUMENT} from '@angular/common';
 import {CustomClass, Font} from './config';
 
 @Component({
-  selector: 'angular-editor-toolbar',
-  templateUrl: './angular-editor-toolbar.component.html',
-  styleUrls: ['./angular-editor-toolbar.component.scss']
+  selector: 'editor-toolbar',
+  templateUrl: './editor-toolbar.component.html',
+  styleUrls: ['./editor-toolbar.component.scss']
 })
 
 export class AngularEditorToolbarComponent {

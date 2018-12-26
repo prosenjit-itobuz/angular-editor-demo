@@ -25,6 +25,10 @@ export class AppComponent {
     {
       name: 'Georgia',
       class: 'georgia'
+    },
+    {
+      name: 'Comic-sans',
+      class: 'Comic-sans'
     }],
     customClasses: [ // optional
       {
