@@ -213,4 +213,13 @@ export class AngularEditorToolbarComponent {
   setCustomClass(classId: number) {
     this.editorService.createCustomClass(this.customClasses[classId]);
   }
+
+  addImage() {
+    const imagePrompt = window.prompt('Add public image source');
+
+    if (imagePrompt !== null) {
+      console.log(imagePrompt);
+      this.editorService.insertImage(imagePrompt);
+    }
+  }
 }

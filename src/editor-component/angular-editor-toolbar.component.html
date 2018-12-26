@@ -133,7 +133,7 @@
       accept="image/*"
       type="file" (change)="onFileChanged($event)"
       #fileInput>
-    <button type="button" class="angular-editor-button" (click)="fileInput.click()" title="Insert Image"
+    <button type="button" class="angular-editor-button" (click)="addImage()" title="Insert Image"
             [disabled]="htmlMode" tabindex="-1"><i class="fa fa-image"></i></button>
     <button type="button" title="Horizontal Line" class="angular-editor-button"
             (click)="triggerCommand('insertHorizontalRule')" [disabled]="htmlMode" tabindex="-1"><i class="fa fa-minus"></i></button>
